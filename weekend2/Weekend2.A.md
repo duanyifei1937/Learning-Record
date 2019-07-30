@@ -1,2 +1,0 @@
-# Weekend2.A
-
