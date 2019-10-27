@@ -30,4 +30,6 @@
 * [Tools](tools/tools.md)
     * [VirtualBox](tools/virtualbox.md)
     * [Vagrant](tools/vagrant.md)
-
+---
+* [Kafka](kafka/kafka.md)
+    * [选型](kafka/version_option.md)
