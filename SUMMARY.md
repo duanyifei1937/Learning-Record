@@ -35,4 +35,5 @@
 * [Kafka](kafka/kafka.md)
     * [选型 & 部署](kafka/version_option.md)
     * [集群参数配置](kafka/cluster-config.md)
+    * [客户端实践及原理解析](kafka/producer-partion.md)
 
