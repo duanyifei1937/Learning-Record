@@ -1,4 +1,4 @@
-# 选型
+# 选型 & 部署
 > kafka各个版本的对比
 
 <!--ts-->
@@ -37,3 +37,25 @@
 
 ### kafka扩容broker
 * ~~
+
+## 部署
+* OS选择(Linux recomment)
+    * epoll IO模型 
+    * Zero copy 
+    * disk RAID
+    * disk capacity  
+        * retention day
+        * message size
+        * replica numbers
+        * kafka compression
+        * resource reserved
+    * bandwidth：
+        * 网卡最大值的70%(丢包)
+        * resource reserved(2/3)             
+
+## IO模型
+* 阻塞式 I/O
+* 非阻塞式 I/O
+* I/O多路复用： select 
+* 信号驱动 I/O: epoll
+* 异步 I/O: windows IOCP 线程模型

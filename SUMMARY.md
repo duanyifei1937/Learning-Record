@@ -30,6 +30,9 @@
 * [Tools](tools/tools.md)
     * [VirtualBox](tools/virtualbox.md)
     * [Vagrant](tools/vagrant.md)
----
+
+-----
 * [Kafka](kafka/kafka.md)
-    * [选型](kafka/version_option.md)
+    * [选型 & 部署](kafka/version_option.md)
+    * [集群参数配置](kafka/cluster-config.md)
+
