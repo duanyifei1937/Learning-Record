@@ -34,6 +34,8 @@
     * [选型 & 部署](kafka/version_option.md)
     * [集群参数配置](kafka/cluster-config.md)
     * [客户端实践及原理解析](kafka/producer-partion.md)
+    * [管理&监控](kafka/manager_monitor.md)
+        * [Topic Manager](kafka/manager/topic.md)
 * [数据结构&算法](dataStructure_algorithm/readme.md)
     * [复杂度分析](dataStructure_algorithm/complexity_analysis.md)
 * [Hadoop](hadoop/readme.md)
