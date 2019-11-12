@@ -18,8 +18,7 @@ etcd & kubelet
 | --pod-eviction-timeout | 30s | 5m | 5m | 1m | 认为node无响应后多久驱逐该node上的pod |
 
 ### kube-scheduler
-
-
+* multip-idc array 自定义调度策略
 
 ### DNS
 无效解析问题 [Kubernetes内部域名解析原理](https://ccnuo.com/2019/08/25/CoreDNS%EF%BC%9AKubernetes%E5%86%85%E9%83%A8%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E5%8E%9F%E7%90%86%E3%80%81%E5%BC%8A%E7%AB%AF%E5%8F%8A%E4%BC%98%E5%8C%96%E6%96%B9%E5%BC%8F/)
@@ -37,3 +36,5 @@ options ndots: 5
 * ipset分组
 
 ## k8s alert 指标
+
+## cpu、io、load高如何排查
