@@ -17,14 +17,28 @@
 ## 一些问题及解答
 * k8s log collection:
     * k8s redirect log (两个pod同时漂在一个node上面，mount相同文件，锁问题)；
+        * (会存在lock的问题, 这样使用会造成miss log or lines being cut)
+        * [how kubernetes deal with file write locker accross multi pods when hostpath Volumes concerned](https://stackoverflow.com/questions/52052573/how-kubernetes-deal-with-file-write-locker-accross-multi-pods-when-hostpath-volu)
+        * 现在的使用方式是有问题的！~~
     * stdout & stderr & 业务日志一起打入前台输出收集；
+        * 这样做的一些弊端：
+            * 业务日志与启动日志混合；
+            * 真实业务场景，一个pod生成多种日志，混合到一处不方便管理；
     * Fluentd使用；
+        * 使用后介绍~
 * 灰度 - ingress (canary & mirror)原理；
+    * canary: 类似于做multip-idc 流量切换的过程，按一定比例，将`$host`改写，流量访问到修改后的upstream;
+    * mirror: 借助nginx mirror module, 针对特定路径，`mirroring of an original request by creating background mirror subrequests. Responses to mirror subrequests are ignored.`
+
 * ansible -- 原理、自定义module;
 * 网络：
-    * 网络打通， 网卡 --> docker0 or vni0?
-    * 如何访问内部pod ip?
+    * 网络打通， 网卡 --> docker0
+        * docker0相当于一张网卡，在node上增加路由信息，匹配到pod ip ranger路由规则匹配;
+    * 如何访问内部pod ip??
 * ingress 全局配置？ annotation or comfigmap?
+    * configmap 用来做全局配置nginx配置信息；
+    * annotation domain级别；
+    * template configmap无法实现的时候；
 * Rancher的使用？
 * prometheus-operator的增加业务libnary, monitor target;
     * 给ep增加monitor target;
