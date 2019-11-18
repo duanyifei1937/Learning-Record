@@ -13,6 +13,7 @@
         * [etcd](kubernetes/optimization/etcd.md)
         * [kube-scheduler](kubernetes/optimization/kube-scheduler.md)
     * [Logging](kubernetes/logging/logging.md)
+
 -----
 * [Prometheus](prometheus/prometheus.md)
     * [High-Availability](prometheus/high-availability.md)
@@ -65,7 +66,8 @@
 -----
 * [数据结构&算法](dataStructure_algorithm/readme.md)
     * [复杂度分析](dataStructure_algorithm/complexity_analysis.md)
-    * [array](dataStructure_algorithm/array.md)
+    * [数据](dataStructure_algorithm/array.md)
+    * [链表](dataStructure_algorithm/linked-list.md)
 
 -----
 * [Hadoop](hadoop/readme.md)
@@ -86,3 +88,4 @@
     * [banyu](interview/banyu.md)
     * [momo](interview/momo.md)
     * [shangtang](interview/shangtang.md)
+
