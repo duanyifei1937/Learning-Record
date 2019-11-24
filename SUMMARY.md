@@ -1,8 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-    * [201910](learning-road/201910.md)
-    * [201911](learning-road/201911.md)
 * [Kubernetes](kubernetes/kubernetes.md)
     * [Helm](kubernetes/helm.md)
         * [Helm Security Install](kubernetes/helm/helm-install.md)
@@ -75,6 +73,12 @@
 -----
 * [Linux性能优化](linux/linux.md)
     * [分析性能问题步骤](linux/analysis/analysis-steps.md)
+    * [cpu](linux/cpu/readme.md)
+    * [memory](linux/memory/readme.md)
+        * [memory如何工作?](linux/memory/mem-how-to-work.md)
+        * [理解buffer and cache](linux/memory/buffer-cache.md)
+    * [IO](linux/io/readme.md)
+    * [network](linux/network/readme.md)
 
 -----
 * [Nginx](nginx/readme.md)
