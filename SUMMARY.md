@@ -11,7 +11,7 @@
         * [etcd](kubernetes/optimization/etcd.md)
         * [kube-scheduler](kubernetes/optimization/kube-scheduler.md)
     * [Logging](kubernetes/logging/logging.md)
-
+        * [Log-Collection](kubernetes/logging/readme.md)
 -----
 * [Prometheus](prometheus/prometheus.md)
     * [High-Availability](prometheus/high-availability.md)

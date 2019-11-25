@@ -20,9 +20,8 @@
 (本质上第一种和第二种相同)
 
 ## Log Collection Kind(日志收集的集中方式)
-* [cluster level](https://medium.com/kubernetes-tutorials/cluster-level-logging-in-kubernetes-with-fluentd-e59aa2b6093a) -- 并非整合k8s cluster 日志
-* node level
-* sidecar(ingress-nginx-controller)
+* node level: daemonset pod
+* pod level: sidecar(ingress-nginx-controller)
 
 ## Log Collection OpenSource way
 * Filebeat + kafka + logstash + Elasticsearch + Kibana
