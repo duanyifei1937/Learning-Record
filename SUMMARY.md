@@ -12,6 +12,13 @@
         * [kube-scheduler](kubernetes/optimization/kube-scheduler.md)
     * [Logging](kubernetes/logging/logging.md)
         * [Log-Collection](kubernetes/logging/readme.md)
+    * [Install](kubernetes/install.md)
+        * [Install K8s on MacOS](kubernetes/install/macos.md)
+
+-----
+* [Docker](docker/docker.md)
+    * [Image save](docker/image-save.md)
+
 -----
 * [Prometheus](prometheus/prometheus.md)
     * [High-Availability](prometheus/high-availability.md)
@@ -36,6 +43,7 @@
 * [ElasticSearch](elasticsearch/es.md)
     * [水平扩展集群](elasticsearch/expansion.md)
         * [集群部署方式](elasticsearch/cluster-deploy.md)
+* [Logstash](logstash/logstash.md)
 
 -----
 * [Monitor](monitor/monitor.md)
@@ -77,6 +85,8 @@
     * [memory](linux/memory/readme.md)
         * [memory如何工作?](linux/memory/mem-how-to-work.md)
         * [理解buffer and cache](linux/memory/buffer-cache.md)
+        * [利用系统缓存优化进程运行](linux/memory/sys-cache-to-optimization-process.md)
+        * [内存泄漏](linux/memory/mem-miss.md)
     * [IO](linux/io/readme.md)
     * [network](linux/network/readme.md)
 

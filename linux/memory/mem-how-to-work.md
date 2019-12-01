@@ -4,11 +4,11 @@
 **内存**: 存储系统和应用程序的指令、数据、缓存等;
 **物理内存**: (主存)，动态随机访问内存（DRAM), 内核才可以直接访问物理内存;
 **虚拟内存**: Linux 内核给每个进程都提供了一个独立的虚拟地址空间，并且这个地址空间是连续的。
-    **内核空间**：
-    **用户空间**：
+    * **内核空间**：
+    * **用户空间**：
 **内存映射**： 将虚拟内存地址映射到物理内存地址，通过`页表`记录映射关系；
 **页表**： 存储在 `MMU`中;
-**MMU**: CPU 的内存管理单元; 4KBy页大小；
+**MMU**: CPU 的内存管理单元; 4KB页大小；
 **TLB**: (Translation Lookaside Buffer，转译后备缓冲器),MMU 中页表的高速缓存;
 
 ## 分配过程 & 性能问题
@@ -38,7 +38,6 @@
 比如用下面的命令，你就可以把 sshd 进程的 oom_adj 调小为 -16，这样， sshd 进程就不容易被 OOM 杀死。  
 `echo -16 > /proc/$(pidof sshd)/oom_adj`
 
-
 ## 如何查看内存使用？
 ### free
 
@@ -48,6 +47,8 @@ $ free
               total        used        free      shared  buff/cache   available
 Mem:        8169348      263524     6875352         668     1030472     7611064
 Swap:             0           0           0
+# buffer: Memory used by kernel buffers (Buffers in /proc/meminfo)
+# cache: Memory used by the page cache and slabs (Cached and Slab in /proc/meminfo)
 ```
 
 ### top
