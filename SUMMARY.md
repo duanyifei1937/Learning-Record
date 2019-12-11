@@ -12,6 +12,7 @@
         * [kube-scheduler](kubernetes/optimization/kube-scheduler.md)
     * [Logging](kubernetes/logging/logging.md)
         * [Log-Collection](kubernetes/logging/readme.md)
+        * [定制化日志收集](kubernetes/logging/banyu-log.md)
     * [Install](kubernetes/install.md)
         * [Install K8s on MacOS](kubernetes/install/macos.md)
 
@@ -26,6 +27,7 @@
     * [Pushgateway Python Client](prometheus/pushgateway-python-client.md)
     * [Prometheus Monitor GPU](prometheus/monitor-gpu.md)
     * [Kafka Zookeeper Exporter](prometheus/kafka-zk-exporter.md)
+    * [Prometheus: The Unicorn in Metrics](prometheus/unicorn.md)
 
 -----
 * [CI/CD](cicd/cicd.md)
@@ -44,6 +46,8 @@
     * [水平扩展集群](elasticsearch/expansion.md)
         * [集群部署方式](elasticsearch/cluster-deploy.md)
 * [Logstash](logstash/logstash.md)
+    * [Logstash timestamp overwrite](logstash/timestamp-overwrite.md)
+    * [Logstash 调优](logstash/optimization.md)
 
 -----
 * [Monitor](monitor/monitor.md)
@@ -82,6 +86,8 @@
 * [Linux性能优化](linux/linux.md)
     * [分析性能问题步骤](linux/analysis/analysis-steps.md)
     * [cpu](linux/cpu/readme.md)
+        * [load理解](linux/cpu/load.md)
+        * [cpu 上下文切换](linux/cpu/switch.md)
     * [memory](linux/memory/readme.md)
         * [memory如何工作?](linux/memory/mem-how-to-work.md)
         * [理解buffer and cache](linux/memory/buffer-cache.md)
@@ -96,6 +102,11 @@
     * [Location 匹配优先级](nginx/location-priority.md)
     * [upstream health check](nginx/upstream-health-check.md)
     * [proxy_pass ‘/’结尾](nginx/proxy-pass.md)
+
+-----
+* [Shell](shell/shell.md)
+    * [flock](shell/flock.md)
+    * [Multiple process](shell/multiple-process.md)
 
 -----
 * [Interview](interview.md)
