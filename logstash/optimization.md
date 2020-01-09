@@ -25,7 +25,15 @@ filebeat。queue.mem.events： 32768*2的event数(用于循环)
 filebeat.event: 4096显然不够；
 
 * filebeat + kafka + logstash
-> 由于filebeat并非直接给logstash消费，直接可定位于filebeat本身性能问题；
+> 由于filebeat并非直接给logstash消费，需要查看kafka output 相关参数以及kafka 积压问题；直接可定位于filebeat本身性能问题；
+```
+
+``` yaml
+kafka_bulk_max_size: 10000
+kafka_channel_buffer_size: 2560
+kafka_keep_alive: 10s
+kafka_worker: 3
+logging_output: kafka
 ```
 
 * filebeat:
@@ -153,6 +161,12 @@ FGCT  从应用程序启动到采样时old代(全gc)gc所用时间(s)
 GCT   从应用程序启动到采样时gc用的总时间(s)
 
 ```
+
+## issue
+* restart log-pilot发生丢失之前log push的问题；
+
+
+
 
 ## reference
 * https://discuss.elastic.co/t/filebeat-slow-improve-performance/144717/2
