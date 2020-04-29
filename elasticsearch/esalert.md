@@ -19,6 +19,26 @@ kibana-plugin --> elastalert-server --> elasticsearch-cluster
 * es in phy:
     * esalert-server: docker-compose
     * kibana-plugin: plugin install && restart kibana
+
+* docker deploy:
+
+``` yaml
+# 使用支持es7.0版本的esalert images:
+docker run -d -p 3030:3030 \
+    -v `pwd`/config/elastalert.yaml:/opt/elastalert/config.yaml \
+    -v `pwd`/config/config.json:/opt/elastalert-server/config/config.json \
+    -v `pwd`/rules:/opt/elastalert/rules \
+    -v `pwd`/rule_templates:/opt/elastalert/rule_templates \
+    --net="host" \
+    --name elastalert hub.pri.ibanyu.com/library/elastalert:3.0.0-beta.1
+
+# dev tools: (old version template存在问题，删除使自动创建)
+delete elastalert_status_status
+delete elastalert_status
+delete elastalert_status_past
+delete elastalert_status_silence
+delete elastalert_status_error
+```
     
 ## alert rule type
 * elastalert支持以下报警项：
@@ -117,6 +137,11 @@ filter:
 
 ## alert webhoook
 
+``` yaml
+alert:
+ - command
+command: ["curl", "http://192.168.138.237:8080/duanyifei/send/"]
+```
 
 ## other
 ### logrotate

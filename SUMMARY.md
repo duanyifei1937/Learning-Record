@@ -22,12 +22,15 @@
 
 -----
 * [Prometheus](prometheus/prometheus.md)
+    * [监控项总览](prometheus/all_target.md)
     * [High-Availability](prometheus/high-availability.md)
     * [Old Practice](prometheus/old-practice.md)
     * [Pushgateway Python Client](prometheus/pushgateway-python-client.md)
     * [Prometheus Monitor GPU](prometheus/monitor-gpu.md)
     * [Kafka Zookeeper Exporter](prometheus/kafka-zk-exporter.md)
     * [Prometheus: The Unicorn in Metrics](prometheus/unicorn.md)
+    * [process exporter](prometheus/process_export.md)
+    * [blackbox exporter](prometheus/black.md)
 
 -----
 * [CI/CD](cicd/cicd.md)
@@ -43,6 +46,11 @@
 
 -----
 * [ElasticSearch](elasticsearch/es.md)
+    * [文档CRUD操作](elasticsearch/doc_crud.md)
+    * [倒排索引](elasticsearch/sort_index.md)
+    * [索引的相关性](elasticsearch/search_relevance.md)
+    * [Dynimac Mapping & 字段类型](elasticsearch/mapping.md)
+    * [Index Template & Dynamic Template](elasticsearch/index_template.md)
     * [水平扩展集群](elasticsearch/expansion.md)
         * [集群部署方式](elasticsearch/cluster-deploy.md)
     * [写性能优化](elasticsearch/write-optimization.md)
@@ -106,12 +114,16 @@
 
 -----
 * [Nginx](nginx/readme.md)
+    * [testabc](nginx/testabc.md)
     * [Nginx Install](nginx/nginx-install.md)
     * [Location 匹配优先级](nginx/location-priority.md)
     * [upstream health check](nginx/upstream-health-check.md)
     * [proxy_pass ‘/’结尾](nginx/proxy-pass.md)
     * [ModSecurity](nginx/modsecurity.md)
         * [封禁分析](nginx/modsecurity/fenjin.md)
+        * [bak](nginx/modsecurity/bak.md)
+        * [test123](nginx/modsecurity/123.md)
+
 -----
 * [Shell](shell/shell.md)
     * [flock](shell/flock.md)

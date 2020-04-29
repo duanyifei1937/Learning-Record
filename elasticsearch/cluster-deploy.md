@@ -1,4 +1,20 @@
 # 集群部署方式
+## 测试环境部署及扩展
+![](media/15790711668296.jpg)
+
+## 节点分类：
+* master node & master-eligible node(master候选节点)
+* data node & coordinating node(协调节点)
+    * coordinating node: 接受client请求，分发请求到节点，汇聚结果；每个节点都起到corrdinating作用；
+* hot node & warm node
+
+## shard:
+* shard数过少：
+    * 无法扩容(master shard不可动态增加，只能reindex)
+    * 但shard size过大，数据重分配耗时；
+* shard数过大：
+    * 影响相关score, 影响统计结果？
+    * 但节点shard数过多，资源浪费、影响性能；
 
 ## 单一角色节点
 * 节点类型
