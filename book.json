@@ -1,0 +1,8 @@
+{
+    "plugins": ["disqus", "splitter"],
+    "pluginsConfig": {
+        "disqus": {
+            "shortName": "yifei duan"
+        }
+    }
+}
